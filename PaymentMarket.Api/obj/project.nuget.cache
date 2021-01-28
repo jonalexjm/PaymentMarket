@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uygEIhQqMfxebtLR6kjh76mV/1wyK0OhyDYhRttrXvDEqqu8KA9OQ1eswfDMYabnvXS6qow1xUUAsxO1BzsCbQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Api\\PaymentMarket.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}

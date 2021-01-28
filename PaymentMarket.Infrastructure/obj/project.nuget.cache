@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "v8yyVQVRPSNGTEJUzxUhM0hUu2Ns7RVh11w+Knlu7WeqJMsQ8dC4+/XlcfeKObAw6sn+lyDZcy7brJz9sWPTzQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
