@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\PaymentMarket.Core\PaymentMarket.Core.csproj" />
     <ProjectReference Include="..\PaymentMarket.Infrastructure\PaymentMarket.Infrastructure.csproj" />
   </ItemGroup>

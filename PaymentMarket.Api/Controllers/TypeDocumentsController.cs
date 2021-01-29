@@ -6,6 +6,7 @@
 
     [Route("api/[controller]")]
     [ApiController]
+    [ApiVersion("1.0")]
     public class TypeDocumentsController : ControllerBase
     {
         private readonly ITypeDocumentRepository _typeDocumentRepository;
@@ -15,6 +16,7 @@
         }
 
         [HttpGet]
+        //[MapToApiVersion("1.0")]
         public async Task<IActionResult> GetTypeDocuments()
         {
             var result = await _typeDocumentRepository.GetTypeDocuments();

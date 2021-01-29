@@ -23,3 +23,5 @@ D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Api\obj\Debug\netcoreapp3.1\Pa
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Api\obj\Debug\netcoreapp3.1\PaymentMarket.Api.dll
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Api\obj\Debug\netcoreapp3.1\PaymentMarket.Api.pdb
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Api\obj\Debug\netcoreapp3.1\PaymentMarket.Api.genruntimeconfig.cache
+D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Api\obj\Debug\netcoreapp3.1\PaymentMarket.Api.MvcApplicationPartsAssemblyInfo.cs
