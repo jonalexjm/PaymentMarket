@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AhnjVgd+eeog6AulcgVNeq/pUIPulzlCYEgXSGXh6mJbOfK3MLrXq8Xe7pHmPmba1X3C8xbaVUZxDfCry1w2gw==",
+  "dgSpecHash": "Kz1i8W8RsMztqgiqI5zcqmnt3PxwBsJAyaggAg21DM2hJEuXAid7yawgBqXIIDbK6KoGAUn1U8VDqWlJPQpKvA==",
   "success": true,
   "projectFilePath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Web\\PaymentMarket.Web.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

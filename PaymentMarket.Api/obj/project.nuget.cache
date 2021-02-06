@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xRJiHPIKRIKuBAdm3ov/BgILV1hUN1l1xQhDCJnxjZaaaLkmLD/BRTnUcMR4bJKHYXKW8G93e7kyqU9Kaf3cXw==",
+  "dgSpecHash": "fs36Pkd3G9DB9daUu1UtweaaoZZMOfiPyb2wKB1btRaFjTTBNexx0Cy6zc3jTDn6IlQJ2FUNyUThS6/cliQcIQ==",
   "success": true,
   "projectFilePath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Api\\PaymentMarket.Api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\4.2.0\\microsoft.aspnetcore.mvc.versioning.4.2.0.nupkg.sha512",
-    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512"
+    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\4.2.0\\microsoft.aspnetcore.mvc.versioning.4.2.0.nupkg.sha512"
   ],
   "logs": []
 }

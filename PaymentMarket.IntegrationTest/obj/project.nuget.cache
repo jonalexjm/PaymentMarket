@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Jex3CXi9jjx3pT30EiT1n7MFeV/YO47UPUhOdMmrrvrLzFe1ZSgFVmY+xiqctFGZqGgbSfxr8N045MwHpkbtmA==",
+  "dgSpecHash": "KeGUnaro4ZKhR6gS2uMg1Tguj25qCZicZdoVoNEmofHG0Fi3b00eCvmIpK59HsmPyUX7KNJ1OgkJPJ8gHqpaYQ==",
   "success": true,
   "projectFilePath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.IntegrationTest\\PaymentMarket.IntegrationTest.csproj",
   "expectedPackageFiles": [
@@ -53,8 +53,7 @@
     "C:\\Users\\jhon.jimenez\\.nuget\\packages\\xunit.core\\2.4.0\\xunit.core.2.4.0.nupkg.sha512",
     "C:\\Users\\jhon.jimenez\\.nuget\\packages\\xunit.extensibility.core\\2.4.0\\xunit.extensibility.core.2.4.0.nupkg.sha512",
     "C:\\Users\\jhon.jimenez\\.nuget\\packages\\xunit.extensibility.execution\\2.4.0\\xunit.extensibility.execution.2.4.0.nupkg.sha512",
-    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.0\\xunit.runner.visualstudio.2.4.0.nupkg.sha512",
-    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+    "C:\\Users\\jhon.jimenez\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.0\\xunit.runner.visualstudio.2.4.0.nupkg.sha512"
   ],
   "logs": []
 }
