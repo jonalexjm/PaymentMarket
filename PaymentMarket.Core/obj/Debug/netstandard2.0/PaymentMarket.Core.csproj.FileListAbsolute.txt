@@ -1,9 +1,9 @@
+D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Core\bin\Debug\netstandard2.0\PaymentMarket.Core.deps.json
+D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Core\bin\Debug\netstandard2.0\PaymentMarket.Core.dll
+D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Core\bin\Debug\netstandard2.0\PaymentMarket.Core.pdb
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Core\obj\Debug\netstandard2.0\PaymentMarket.Core.csprojAssemblyReference.cache
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Core\obj\Debug\netstandard2.0\PaymentMarket.Core.AssemblyInfoInputs.cache
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Core\obj\Debug\netstandard2.0\PaymentMarket.Core.AssemblyInfo.cs
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Core\obj\Debug\netstandard2.0\PaymentMarket.Core.csproj.CoreCompileInputs.cache
-D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Core\bin\Debug\netstandard2.0\PaymentMarket.Core.deps.json
-D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Core\bin\Debug\netstandard2.0\PaymentMarket.Core.dll
-D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Core\bin\Debug\netstandard2.0\PaymentMarket.Core.pdb
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Core\obj\Debug\netstandard2.0\PaymentMarket.Core.dll
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Core\obj\Debug\netstandard2.0\PaymentMarket.Core.pdb

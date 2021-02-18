@@ -35,3 +35,8 @@ D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\obj\Debug\netcoreapp3.1\Pa
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\obj\Debug\netcoreapp3.1\PaymentMarket.Web.pdb
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\obj\Debug\netcoreapp3.1\PaymentMarket.Web.genruntimeconfig.cache
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\obj\Debug\netcoreapp3.1\PaymentMarket.Web.csproj.CopyComplete
+D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\obj\Debug\netcoreapp3.1\Razor\Views\TypeDocuments\Index.cshtml.g.cs
+D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\bin\Debug\netcoreapp3.1\PaymentMarket.Core.dll
+D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\bin\Debug\netcoreapp3.1\PaymentMarket.Core.pdb
+D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\bin\Debug\netcoreapp3.1\PaymentMarket.Infrastructure.dll
+D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\bin\Debug\netcoreapp3.1\PaymentMarket.Infrastructure.pdb

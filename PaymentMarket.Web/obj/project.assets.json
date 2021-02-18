@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "PaymentMarket.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/PaymentMarket.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PaymentMarket.Core.dll": {}
+        }
+      },
+      "PaymentMarket.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "PaymentMarket.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PaymentMarket.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PaymentMarket.Infrastructure.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PaymentMarket.Core/1.0.0": {
+      "type": "project",
+      "path": "../PaymentMarket.Core/PaymentMarket.Core.csproj",
+      "msbuildProject": "../PaymentMarket.Core/PaymentMarket.Core.csproj"
+    },
+    "PaymentMarket.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../PaymentMarket.Infrastructure/PaymentMarket.Infrastructure.csproj",
+      "msbuildProject": "../PaymentMarket.Infrastructure/PaymentMarket.Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "PaymentMarket.Core >= 1.0.0",
+      "PaymentMarket.Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jhon.jimenez\\.nuget\\packages\\": {},
@@ -42,7 +80,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj": {
+              "projectPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj"
+            },
+            "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj": {
+              "projectPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -72,7 +117,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

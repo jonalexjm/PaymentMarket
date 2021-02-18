@@ -8,4 +8,9 @@
     <Folder Include="wwwroot\Theme\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PaymentMarket.Core\PaymentMarket.Core.csproj" />
+    <ProjectReference Include="..\PaymentMarket.Infrastructure\PaymentMarket.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
