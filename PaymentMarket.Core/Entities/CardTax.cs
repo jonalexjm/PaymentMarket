@@ -6,6 +6,7 @@ namespace PaymentMarket.Core.Entities
 {
     public class CardTax
     {
+        
         public int Id { get; set; }
         public decimal FeePayment { get; set; }
         public int AnnioId { get; set; }
