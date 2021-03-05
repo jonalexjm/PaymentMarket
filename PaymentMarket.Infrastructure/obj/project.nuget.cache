@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zPL85zSCF/YIsKaineuEVYV3CrA+Y1QeIk20RM52WM0E6m5C8aDJjOXsl4vRQY0ymOXLcLS/2AYCRxkoyXusHw==",
+  "dgSpecHash": "ttVjJFCFNyiCHlrt9rglMtIt13w+bRAIEsnH/24CIDh37S64f/1i6VJmtW7iB2l/5Sx0mcYGPeBo+4yvpca9dQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj",
+  "projectFilePath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jhon.jimenez\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\jhon.jimenez\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
@@ -127,7 +127,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.VisualStudio.Web.CodeGeneration.Design 3.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "message": "El paquete \"Microsoft.VisualStudio.Web.CodeGeneration.Design 3.1.2\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
       "libraryId": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"

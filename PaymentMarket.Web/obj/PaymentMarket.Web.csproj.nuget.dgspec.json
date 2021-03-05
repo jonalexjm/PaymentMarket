@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Web\\PaymentMarket.Web.csproj": {}
+    "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Web\\PaymentMarket.Web.csproj": {}
   },
   "projects": {
-    "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj": {
+    "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj",
+        "projectUniqueName": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj",
         "projectName": "PaymentMarket.Core",
-        "projectPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj",
+        "projectPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj",
         "packagesPath": "C:\\Users\\jhon.jimenez\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\obj\\",
+        "outputPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
@@ -68,14 +68,14 @@
         }
       }
     },
-    "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj": {
+    "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj",
+        "projectUniqueName": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj",
         "projectName": "PaymentMarket.Infrastructure",
-        "projectPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj",
+        "projectPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\jhon.jimenez\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\obj\\",
+        "outputPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
@@ -99,8 +99,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj": {
-                "projectPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj"
+              "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj": {
+                "projectPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj"
               }
             }
           }
@@ -154,14 +154,14 @@
         }
       }
     },
-    "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Web\\PaymentMarket.Web.csproj": {
+    "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Web\\PaymentMarket.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Web\\PaymentMarket.Web.csproj",
+        "projectUniqueName": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Web\\PaymentMarket.Web.csproj",
         "projectName": "PaymentMarket.Web",
-        "projectPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Web\\PaymentMarket.Web.csproj",
+        "projectPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Web\\PaymentMarket.Web.csproj",
         "packagesPath": "C:\\Users\\jhon.jimenez\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Web\\obj\\",
+        "outputPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
@@ -185,11 +185,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj": {
-                "projectPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj"
+              "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj": {
+                "projectPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj"
               },
-              "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj": {
-                "projectPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj"
+              "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj": {
+                "projectPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj"
               }
             }
           }
