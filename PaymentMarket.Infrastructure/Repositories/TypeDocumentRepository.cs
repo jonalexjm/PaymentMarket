@@ -4,21 +4,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
+using PaymentMarket.Infrastructure.Data;
+
 namespace PaymentMarket.Infrastructure.Repositories
 {
     using System.Threading.Tasks;
-    public class TypeDocumentRepository : ITypeDocumentRepository
-    {
-        public async Task<IEnumerable<TypeDocument>> GetTypeDocuments()
-        {
-            var typeDocumentsTest = Enumerable.Range(1, 10).Select(x => new TypeDocument
-            {
-                Id = x,
-                Description = $"Descripcion {x}"
-            });
-            await Task.Delay(10);
+    public class TypeDocumentRepository : BaseRepository<TypeDocument>, ITypeDocumentRepository
+    { 
+        public TypeDocumentRepository(PaymentMarketContext context) : base(context){}
+     
 
-            return typeDocumentsTest;
-        }
+        
     }
 }

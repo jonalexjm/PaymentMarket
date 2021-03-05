@@ -4,9 +4,9 @@
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
-    public interface ITypeDocumentRepository
+    public interface ITypeDocumentRepository : IRepository<TypeDocument>
     {
-        Task<IEnumerable<TypeDocument>> GetTypeDocuments();
-
+        
+        
     }
 }

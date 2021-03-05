@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PaymentMarket.Core.Entities
 {
-    public class TaxCollector
+    public class TaxCollector : BaseEntity
     {
         public int Id { get; set; }
         public int MarketId { get; set; }

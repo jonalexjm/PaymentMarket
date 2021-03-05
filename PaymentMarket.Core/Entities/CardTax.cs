@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PaymentMarket.Core.Entities
 {
-    public class CardTax
+    public class CardTax : BaseEntity
     {
         
         public int Id { get; set; }

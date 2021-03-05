@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PaymentMarket.Core.Entities
 {
-    public class PaymentRelation
+    public class PaymentRelation : BaseEntity
     {
         public int Id { get; set; }
         public DateTime DatePayment { get; set; }

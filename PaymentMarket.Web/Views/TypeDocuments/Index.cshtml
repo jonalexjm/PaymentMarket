@@ -5,7 +5,7 @@
 }
 
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+<div class="content-wrapper justify-content-center">
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
@@ -13,76 +13,123 @@
                 <div class="col-sm-6">
                     <h1>Pagina de Inicio</h1>
                 </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Blank Page</li>
-                    </ol>
-                </div>
+                
             </div>
         </div><!-- /.container-fluid -->
     </section>
 
     <!-- Main content -->
-    <section class="content">
-
+    <div class="container justify-content-center">
         <!-- Default box -->
-        <div class="card">
-            <div class="card-header">
-                <h3 class="card-title">Tipo de Documento</h3>
+                <div class="card justify-content-center">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-6"><h2 class="card-title">Tipo de Documento</h2></div>
+                            <div class="col-6"><button class="bt btn-success" data-toggle="modal" data-target="#addTypeDocumentModal">Agregar</button></div>
+                        </div>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
 
-                <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                        <i class="fas fa-minus"></i>
-                    </button>
-
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-hover table-responsive table-striped col-12">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Id)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Description)
+                                    </th>
+                                    <th>
+                                        Acciones
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Id)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Description)
+                                        </td>
+                                        <td>
+                                            <button class="bt btn-warning">Editar</button>
+                                            <button class="bt btn-danger" data-toggle="modal" data-target="#addEliminarTypeDocumentModal">Eliminar</button>
+                                        </td>
+        
+        
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                        Footer de ejemplo
+                    </div>
+                    <!-- /.card-footer-->
                 </div>
-            </div>
-            <div class="card-body">
-
-                <table class="table table-hover table-responsive table-striped" id="MyTable">
-                    <thead>
-                        <tr>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Id)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Description)
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Id)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Description)
-                                </td>
-
-
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-
-
-
-
-
-
-            </div>
-            <!-- /.card-body -->
-            <div class="card-footer">
-                Footer
-            </div>
-            <!-- /.card-footer-->
-        </div>
-        <!-- /.card -->
-
-    </section>
+                <!-- /.card -->
+    </div>
+    
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+
+<!-- Modal Agregar -->
+<div class="modal fade" id="addTypeDocumentModal" 
+     tabindex="-1" 
+     role="dialog" 
+     aria-labelledby="exampleModalLabel" 
+     aria-hidden="true">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <form method="post" asp-controller="TypeDocuments" asp-action="create">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Agregar Tipo Documento</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                     <div class="form-group">
+                         <label>Descripcion</label>
+                         <input type="text" class="form-control" required="required" name="Description"/>
+                     </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-success">Guardar</button>
+              </div>
+             </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Eliminar -->
+<div class="modal fade" id="addEliminarTypeDocumentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Eliminar Tipo Documento</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                   Desea Eliminar el Registro!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button  class="btn btn-danger">Eliminar</button>
+            </div>
+        </div>
+    </div>    
+</div>

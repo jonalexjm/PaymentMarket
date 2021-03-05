@@ -1,17 +1,21 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 using PaymentMarket.Core.Interfaces;
+using PaymentMarket.Infrastructure.Data;
 using PaymentMarket.Infrastructure.Repositories;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PaymentMarket.Core.Services;
+using PaymentMarket.Infrastructure.Data.Seed;
 
 namespace PaymentMarket.Web
 {
@@ -28,7 +32,18 @@ namespace PaymentMarket.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddTransient<ITypeDocumentRepository, TypeDocumentRepository>();
+
+            services.AddDbContext<PaymentMarketContext>(option =>
+            {
+                option.UseSqlServer(Configuration.GetConnectionString("SqlServerConnection"));
+                //configuracion del servidor
+            });
+
+            services.AddTransient<SeedDb>();
+            services.AddTransient<ITypeDocumentService, TypeDocumentService>();
+            services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

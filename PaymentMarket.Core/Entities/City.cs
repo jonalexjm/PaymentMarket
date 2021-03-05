@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PaymentMarket.Core.Entities
 {
-    public class City
+    public class City : BaseEntity
     {
         public int Id { get; set; }
         public string Description { get; set; }
