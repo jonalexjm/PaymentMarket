@@ -15,13 +15,6 @@
             _typeDocumentRepository = typeDocumentRepository;
         }
 
-        [HttpGet]
-        //[MapToApiVersion("1.0")]
-        public async Task<IActionResult> GetTypeDocuments()
-        {
-            var result = await _typeDocumentRepository.GetTypeDocuments();
-
-            return Ok(result);
-        }
+       
     }
 }
