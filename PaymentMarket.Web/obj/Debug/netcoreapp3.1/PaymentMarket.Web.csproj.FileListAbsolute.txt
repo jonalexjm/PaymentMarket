@@ -148,3 +148,4 @@ D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\bin\Debug\netcoreapp3.1\Au
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\obj\Debug\netcoreapp3.1\Razor\Views\TypeDocuments\_TypeDocumentModelPartial.cshtml.g.cs
 D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\obj\Debug\netcoreapp3.1\Razor\Views\TypeDocuments\Create.cshtml.g.cs
+D:\Projects_jonalexjm\PaymentMarket\PaymentMarket.Web\obj\Debug\netcoreapp3.1\Razor\Views\TypeDocuments\_EditTypeDocumentModelPartial.cshtml.g.cs

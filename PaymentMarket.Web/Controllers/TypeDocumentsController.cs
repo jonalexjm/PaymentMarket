@@ -49,6 +49,38 @@ namespace PaymentMarket.Web.Controllers
             }
             return LocalRedirect("/TypeDocuments/Index");
         }
+        
+        
+        public async  Task<IActionResult> Edit(int id)
+        {
+            try
+            {
+                var typeDocumentResult = await _typeDocumentService.GetTypeDocument(id);
+                return PartialView("_EditTypeDocumentModelPartial", typeDocumentResult);
+
+            }
+            catch (Exception e)
+            {
+                ModelState.AddModelError(string.Empty, e.Message);
+            }
+            return LocalRedirect("/TypeDocuments/Index");
+        }
+        
+        [HttpPost]
+        public async  Task<IActionResult> Edit(TypeDocument typeDocument)
+        {
+            try
+            {
+                var typeDocumentResult = await _typeDocumentService.UpdateTypeDocument(typeDocument);
+                return PartialView("_EditTypeDocumentModelPartial", typeDocument);
+
+            }
+            catch (Exception e)
+            {
+                ModelState.AddModelError(string.Empty, e.Message);
+            }
+            return LocalRedirect("/TypeDocuments/Index");
+        }
 
 
         

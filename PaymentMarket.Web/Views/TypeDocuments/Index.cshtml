@@ -67,7 +67,11 @@
                                             @Html.DisplayFor(modelItem => item.Description)
                                         </td>
                                         <td>
-                                            <button class="bt btn-warning" data-toggle="modal" data-target="#addTypeDocumentModal">Editar</button>
+                                            <button 
+                                                    class="bt btn-success" 
+                                                    data-toggle="ajax-modal" 
+                                                    data-target="#addTypeDocument"
+                                                    data-url="@Url.Action($"Edit/{item.Id}")">Actualizar</button>
                                             <button class="bt btn-danger" data-toggle="modal" data-target="#addEliminarTypeDocumentModal">Eliminar</button>
                                         </td>
         

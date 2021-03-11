@@ -23,7 +23,7 @@ namespace PaymentMarket.Core.Services
 
         public async  Task<TypeDocument> GetTypeDocument(int id)
         {
-            throw new System.NotImplementedException();
+            return await _unitOfWork.typeDocumentRepository.GetById(id);
         }
 
         public async  Task InsertTypeDocument(TypeDocument typeDocument)
@@ -43,7 +43,19 @@ namespace PaymentMarket.Core.Services
 
         public async  Task<bool> UpdateTypeDocument(TypeDocument typeDocument)
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                _unitOfWork.typeDocumentRepository.Update(typeDocument);
+                await _unitOfWork.SaveChangesAsync();
+                return true;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+           
         }
 
         public Task<bool> DeleteTypeDocument(int id)

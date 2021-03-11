@@ -1,0 +1,27 @@
+﻿@model PaymentMarket.Core.Entities.TypeDocument
+
+<div class="modal fade" id="addTypeDocument">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="addTypeDocumentLabel">Agregar Tipo Documento</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>X</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action = "/TypeDocuments/Edit">
+                    <div class="form-group">
+                        <label asp-for="Description"></label>
+                        <input asp-for="Description" class="form-control"/>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success" data-save="modal">Actualizar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
