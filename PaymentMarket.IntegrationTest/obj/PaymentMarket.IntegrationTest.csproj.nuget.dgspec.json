@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.IntegrationTest\\PaymentMarket.IntegrationTest.csproj": {}
+    "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.IntegrationTest\\PaymentMarket.IntegrationTest.csproj": {}
   },
   "projects": {
-    "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.IntegrationTest\\PaymentMarket.IntegrationTest.csproj": {
+    "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.IntegrationTest\\PaymentMarket.IntegrationTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.IntegrationTest\\PaymentMarket.IntegrationTest.csproj",
+        "projectUniqueName": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.IntegrationTest\\PaymentMarket.IntegrationTest.csproj",
         "projectName": "PaymentMarket.IntegrationTest",
-        "projectPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.IntegrationTest\\PaymentMarket.IntegrationTest.csproj",
+        "projectPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.IntegrationTest\\PaymentMarket.IntegrationTest.csproj",
         "packagesPath": "C:\\Users\\jhon.jimenez\\.nuget\\packages\\",
-        "outputPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.IntegrationTest\\obj\\",
+        "outputPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.IntegrationTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",

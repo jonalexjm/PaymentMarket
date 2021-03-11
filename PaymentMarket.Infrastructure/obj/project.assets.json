@@ -6346,11 +6346,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj",
       "projectName": "PaymentMarket.Infrastructure",
-      "projectPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj",
+      "projectPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\PaymentMarket.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\jhon.jimenez\\.nuget\\packages\\",
-      "outputPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\obj\\",
+      "outputPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
@@ -6374,8 +6374,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj": {
-              "projectPath": "d:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj"
+            "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj": {
+              "projectPath": "D:\\Projects_jonalexjm\\PaymentMarket\\PaymentMarket.Core\\PaymentMarket.Core.csproj"
             }
           }
         }
@@ -6434,7 +6434,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "El paquete \"Microsoft.VisualStudio.Web.CodeGeneration.Design 3.1.2\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "message": "Package 'Microsoft.VisualStudio.Web.CodeGeneration.Design 3.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"

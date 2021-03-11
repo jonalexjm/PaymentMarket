@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using PaymentMarket.Core.Interfaces;
 using System.Threading.Tasks;
@@ -27,7 +28,17 @@ namespace PaymentMarket.Core.Services
 
         public async  Task InsertTypeDocument(TypeDocument typeDocument)
         {
-             throw new System.NotImplementedException();
+            try
+            {
+                await _unitOfWork.typeDocumentRepository.Add(typeDocument);
+                await _unitOfWork.SaveChangesAsync();
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         public async  Task<bool> UpdateTypeDocument(TypeDocument typeDocument)

@@ -27,12 +27,12 @@ namespace PaymentMarket.Infrastructure.Repositories
 
         public void SaveChanges()
         {
-            throw new System.NotImplementedException();
+            _context.SaveChanges();
         }
 
-        public Task SaveChangesAsync()
+        public async Task SaveChangesAsync()
         {
-            throw new System.NotImplementedException();
+            await _context.SaveChangesAsync();
         }
     }
 }

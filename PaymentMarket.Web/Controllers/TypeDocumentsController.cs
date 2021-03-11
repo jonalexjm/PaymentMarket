@@ -23,22 +23,34 @@ namespace PaymentMarket.Web.Controllers
             return View( _typeDocumentService.GetTypeDocumentAll() );
         }
         
+        [HttpGet]
+        public IActionResult Create()
+        {
+            var typeDocument = new TypeDocument();
+            return PartialView("_TypeDocumentModelPartial", typeDocument);
+        }
+        
+        
+        [HttpPost]
         public async  Task<IActionResult> Create(TypeDocument typeDocument)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    Console.WriteLine(typeDocument.Description);
+                        await _typeDocumentService.InsertTypeDocument(typeDocument);
+                        return PartialView("_TypeDocumentModelPartial", typeDocument);
 
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e);
-                    throw;
+                    ModelState.AddModelError(string.Empty, e.Message);
                 }
             }
-            return RedirectToAction(nameof(Index));
+            return LocalRedirect("/TypeDocuments/Index");
         }
+
+
+        
     }
 }
