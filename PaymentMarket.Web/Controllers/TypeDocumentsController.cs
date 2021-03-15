@@ -82,7 +82,38 @@ namespace PaymentMarket.Web.Controllers
             return LocalRedirect("/TypeDocuments/Index");
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                var typeDocumentResult = await _typeDocumentService.GetTypeDocument(id);
+                return PartialView("_DeleteTypeDocumentModelPartial", typeDocumentResult);
 
+            }
+            catch (Exception e)
+            {
+                ModelState.AddModelError(string.Empty, e.Message);
+            }
+            return LocalRedirect("/TypeDocuments/Index");
+            
+        }
+        
+        [HttpPost]
+        public async  Task<IActionResult> Delete(TypeDocument typeDocument)
+        {
+            try
+            {
+                var typeDocumentResult = await _typeDocumentService.DeleteTypeDocument(typeDocument.Id);
+                return PartialView("_DeleteTypeDocumentModelPartial", typeDocument);
+
+            }
+            catch (Exception e)
+            {
+                ModelState.AddModelError(string.Empty, e.Message);
+            }
+            return LocalRedirect("/TypeDocuments/Index");
+        }
         
     }
 }
