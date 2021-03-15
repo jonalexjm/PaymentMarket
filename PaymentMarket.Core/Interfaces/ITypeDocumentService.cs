@@ -9,11 +9,8 @@ namespace PaymentMarket.Core.Interfaces
     {
         IEnumerable<TypeDocument> GetTypeDocumentAll();
         Task<TypeDocument> GetTypeDocument(int id);
-
         Task InsertTypeDocument(TypeDocument typeDocument);
-
-         Task<bool> UpdateTypeDocument(TypeDocument typeDocument);
-
+        Task<bool> UpdateTypeDocument(TypeDocument typeDocument);
         Task<bool> DeleteTypeDocument(int id);
     }
 }
