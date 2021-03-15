@@ -58,9 +58,20 @@ namespace PaymentMarket.Core.Services
            
         }
 
-        public Task<bool> DeleteTypeDocument(int id)
+        public async Task<bool> DeleteTypeDocument(int id)
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                await _unitOfWork.typeDocumentRepository.Delete(id);
+                await _unitOfWork.SaveChangesAsync();
+                return true;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
     }
 }
