@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using PaymentMarket.Core.Entities;
+using PaymentMarket.Core.Services;
+using PaymentMarket.Infrastructure.Data;
+
 namespace PaymentMarket.Api
 {
     using Microsoft.AspNetCore.Builder;
@@ -8,6 +13,8 @@ namespace PaymentMarket.Api
     using PaymentMarket.Core.Interfaces;
     using PaymentMarket.Infrastructure.Repositories;
     using Microsoft.AspNetCore.Mvc;
+    using PaymentMarket.Infrastructure.Data.Seed;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -22,7 +29,16 @@ namespace PaymentMarket.Api
         {
             services.AddControllers();
 
-            services.AddTransient<ITypeDocumentRepository, TypeDocumentRepository>();
+            services.AddDbContext<PaymentMarketContext>(option =>
+            {
+                option.UseSqlServer(Configuration.GetConnectionString("SqlServerConnection"));
+                //configuracion del servidor
+            });
+
+            services.AddTransient<SeedDb>();
+            services.AddTransient<ITypeDocumentService, TypeDocumentService>();
+            services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
 
             services.AddApiVersioning(cfg =>
             {

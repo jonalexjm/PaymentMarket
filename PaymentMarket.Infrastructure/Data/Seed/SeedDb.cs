@@ -22,7 +22,7 @@ namespace PaymentMarket.Infrastructure.Data.Seed
         {
             await this.context.Database.EnsureCreatedAsync();
             
-            if (!this.context.TypeDocument.Any())
+            if (!this.context.TypeDocuments.Any())
             {
                 this.AddTypeUsers("Cedula");
                 this.AddTypeUsers("Cedula de Extranjeria");
@@ -38,7 +38,7 @@ namespace PaymentMarket.Infrastructure.Data.Seed
             string Description
         )
         {
-            this.context.TypeDocument.Add(new TypeDocument()
+            this.context.TypeDocuments.Add(new TypeDocument()
             {
                 Description = Description
             });

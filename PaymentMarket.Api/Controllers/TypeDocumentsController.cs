@@ -9,10 +9,19 @@
     [ApiVersion("1.0")]
     public class TypeDocumentsController : ControllerBase
     {
-        private readonly ITypeDocumentRepository _typeDocumentRepository;
-        public TypeDocumentsController(ITypeDocumentRepository typeDocumentRepository)
+        //private readonly ITypeDocumentRepository _typeDocumentRepository;
+        private readonly ITypeDocumentService _typeDocumentService ;
+        public TypeDocumentsController(ITypeDocumentService typeDocumentService)
         {
-            _typeDocumentRepository = typeDocumentRepository;
+            _typeDocumentService = typeDocumentService;
+        }
+        
+        public IActionResult GetTypeDocument()
+        {
+            var typedocuments = _typeDocumentService.GetTypeDocumentAll();
+            
+
+            return Ok(typedocuments);
         }
 
        

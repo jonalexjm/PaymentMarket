@@ -17,13 +17,17 @@ namespace PaymentMarket.Infrastructure.Repositories
         }
         
         
-        public void Dispose()
-        {
-            throw new System.NotImplementedException();
-        }
 
         public IRepository<TypeDocument> typeDocumentRepository =>
             _typeDocumentRepository ?? new BaseRepository<TypeDocument>(_context);
+
+        public void Dispose()
+        {
+            if (_context != null)
+            {
+                _context.Dispose();
+            }
+        }
 
         public void SaveChanges()
         {
