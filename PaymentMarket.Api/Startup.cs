@@ -1,3 +1,4 @@
+using System;
 using Microsoft.EntityFrameworkCore;
 using PaymentMarket.Core.Entities;
 using PaymentMarket.Core.Services;
@@ -28,6 +29,7 @@ namespace PaymentMarket.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddDbContext<PaymentMarketContext>(option =>
             {
