@@ -126,7 +126,37 @@ namespace PaymentMarket.Api.Controllers
                 jsonRespuesta.Control.Message = EnumToString(ResponseMessage.NotFound);
                 return Ok(jsonRespuesta);
                 
-                
+            }
+            catch (Exception e)
+            {
+                jsonRespuesta.Control.Message = e.Message;
+                return BadRequest(jsonRespuesta);
+            }
+            
+        }
+        
+        [HttpDelete("{id}")]
+        public async  Task<IActionResult> Delete(int id)
+        {
+            JsonResponse jsonRespuesta = new JsonResponse();
+            try
+            {
+                var resultTypeDocument = await _typeDocumentService.GetTypeDocument(id);
+                if (resultTypeDocument != null)
+                {
+                    await _typeDocumentService.DeleteTypeDocument(id);
+                    var typeDocumentDto = _mapper.Map<TypeDocumentDto>(resultTypeDocument);
+                    jsonRespuesta.Data = typeDocumentDto;
+                    jsonRespuesta.Result = true;
+                    jsonRespuesta.Control.Code = EnumToString(Http_Code.Accepted);
+                    jsonRespuesta.Control.Message = EnumToString(ResponseMessage.Ok);
+                    return Ok(jsonRespuesta);
+                }
+
+                jsonRespuesta.Result = false;
+                jsonRespuesta.Control.Code = EnumToString(Http_Code.NotFound);
+                jsonRespuesta.Control.Message = EnumToString(ResponseMessage.NotFound);
+                return Ok(jsonRespuesta);
 
             }
             catch (Exception e)
