@@ -11,10 +11,12 @@ namespace PaymentMarket.Core.Models.Control
             Ok,
             [EnumToString("La estructura Json no es valida para realizar la petición.")]
             BadRequest,
-            [EnumToString("No se encontraron Datos.")]
+            [EnumToString("Not Found Data.")]
             NotFound,
             [EnumToString("El servicio no se encuentra disponible. Por favor intente mas tarde")]
             ServiceNotAvailable,
+            [EnumToString("Created Successfully")]
+            Created,
         }
         public static string EnumToString(Enum @enum)
         {

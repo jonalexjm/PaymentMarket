@@ -9,7 +9,6 @@ namespace PaymentMarket.Core.Models.Control
         {
             Value = value;
         }
-
         public string Value { get; }
     }
 }

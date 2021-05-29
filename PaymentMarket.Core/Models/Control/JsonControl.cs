@@ -7,8 +7,5 @@
 
         //[JsonProperty("message")]
         public string Message { set; get; }
-
-        
-        
     }
 }

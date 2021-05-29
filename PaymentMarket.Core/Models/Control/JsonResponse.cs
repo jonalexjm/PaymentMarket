@@ -18,7 +18,6 @@
             Result = false;
             Control.Code = "400";
             Control.Message = "Fue imposible realizar el consumo del Api";
-          //  Control.Alert_Type = EnumToString(Tipo_Alerta.danger);
         }
         
         public enum Http_Code
@@ -34,8 +33,5 @@
             [EnumToString("404")]
             NotFound,
         }
-
-        
-        
     }
 }
