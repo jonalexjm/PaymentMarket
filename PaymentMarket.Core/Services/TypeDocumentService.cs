@@ -52,6 +52,13 @@ namespace PaymentMarket.Core.Services
             }
             catch (Exception e)
             {
+                
+                
+                
+                
+                
+                
+                
                 Console.WriteLine(e);
                 throw;
             }

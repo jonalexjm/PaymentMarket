@@ -54,6 +54,32 @@ namespace PaymentMarket.Api.Controllers
             }
         }
         
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetTypeDocument(int id)
+        {
+            JsonResponse jsonRespuesta = new JsonResponse();
+            try
+            {
+                var typedocument = await _typeDocumentService.GetTypeDocument(id);
+                var typeDocumentDto = _mapper.Map<TypeDocumentDto>(typedocument);
+                jsonRespuesta.Result = true;
+                jsonRespuesta.Control.Code = EnumToString(Http_Code.Ok);
+                
+                if (typeDocumentDto != null )
+                {
+                    jsonRespuesta.Data = typeDocumentDto; 
+                    jsonRespuesta.Control.Message = EnumToString(ResponseMessage.Ok);
+                    return Ok(jsonRespuesta);
+                }
+                return Ok(jsonRespuesta);
+            }
+            catch (Exception e)
+            {
+                jsonRespuesta.Control.Message = e.Message;
+                return BadRequest(jsonRespuesta);
+            }
+        }
+        
         [HttpPost]
         public async Task<IActionResult> PostTypeDocument(TypeDocumentDto typeDocumentDto)
         {
@@ -77,6 +103,42 @@ namespace PaymentMarket.Api.Controllers
             }
         }
 
-       
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateTypeDocument(TypeDocumentDto typeDocumentDto, int id)
+        {
+            JsonResponse jsonRespuesta = new JsonResponse();
+            try
+            {
+                var resultTypeDocument = await _typeDocumentService.GetTypeDocument(id);
+                jsonRespuesta.Result = true;
+                if (resultTypeDocument != null)
+                {
+                    var typeDocument = _mapper.Map<TypeDocument>(typeDocumentDto);
+                    typeDocument.Id = id;
+                    await _typeDocumentService.UpdateTypeDocument(typeDocument);
+                    jsonRespuesta.Data = typeDocumentDto;
+                    jsonRespuesta.Control.Code = EnumToString(Http_Code.Created);
+                    jsonRespuesta.Control.Message = EnumToString(ResponseMessage.Created);
+                    return Ok(jsonRespuesta);
+                }
+                jsonRespuesta.Control.Code = EnumToString(Http_Code.NotFound);
+                jsonRespuesta.Control.Message = EnumToString(ResponseMessage.NotFound);
+                return Ok(jsonRespuesta);
+                
+                
+
+            }
+            catch (Exception e)
+            {
+                jsonRespuesta.Control.Message = e.Message;
+                return BadRequest(jsonRespuesta);
+            }
+            
+        }
+
+
+
+
     }
 }
